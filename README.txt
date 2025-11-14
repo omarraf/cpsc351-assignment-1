@@ -17,7 +17,8 @@ Programming Language used: C++
     g++ shell.cpp -o shell
     g++ serial.cpp -o serial
     g++ parallel.cpp -o parallel
-    # If implementing Bonus:
+
+    Extra credit:
     g++ multi-search.cpp -o multi-search
 
 2.  To Run the Shell:
