@@ -3,7 +3,7 @@ README: CPSC-351 Assignment 1 - Process Management
 ==================================================
 
 Team members:
-1. 
+1. Siddharth Vasu: siddharth.vasu@csu.fullerton.edu, Contribution: shell.cpp
 2. Gilbert Cervantes: GilbertC23@csu.fullerton.edu, Contrinution: serial.cpp
 3. Omar Rafiq, email: omarrafiq@csu.fullerton.edu, Contribution: parallel.cpp
 
