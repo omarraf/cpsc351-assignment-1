@@ -18,8 +18,10 @@ Programming Language used: C++
     g++ serial.cpp -o serial
     g++ parallel.cpp -o parallel
 
-    Extra credit:
+    Extra credit instructions:
     g++ multi-search.cpp -o multi-search
+    The format for running the program is: `./multi-search <FILE NAME> <KEY> <NUMBER OF PROCESSES>`
+    The project includes an example strings.txt file, with a list of fruits, you can run `./multi-search strings.txt Apple 5`
 
 2.  To Run the Shell:
     ./shell
