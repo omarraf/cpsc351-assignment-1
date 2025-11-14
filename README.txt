@@ -43,13 +43,11 @@ A: The user time is longer than the sys time. This is because the majority of th
 3.When fetching all of the locations in the file, which fetcher finishes faster? Why do you
 think that is?
 
-A: TODO
+A: The parallel fetcher finishes faster. This is because the child processes that it creates run each task concurrently, whereas the serial fetcher can only perform tasks one at a time.
 
-4. Suppose one of the fetcher children crashes. Will this affect other children? Explain.
-What is your conclusion regarding the benefits or disadvantages of isolating each fetch
-task within a different process
+4. Suppose one of the fetcher children crashes. Will this affect other children? Explain. What is your conclusion regarding the benefits or disadvantages of isolating each fetch task within a different process?
 
-If one fetcher child crashes, it will not affect the other children or the parent process. This is because the child processes are entirely isolated; each one operates in its own separate memory space, which prevents a failure in one from corrupting the state or execution of others. The conclusion is that isolating each fetch task within a different process provides the significant benefit of Fault Tolerance
+If one fetcher child crashes, it will not affect the other children or the parent process. This is because the child processes are entirely isolated; each one operates in its own separate memory space, which prevents a failure in one from corrupting the state or execution of others. The conclusion is that isolating each fetch task within a different process provides the significant benefit of Fault Tolerance.
 
 
 
