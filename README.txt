@@ -29,25 +29,26 @@ Programming Language used: C++
     time ./parallel
 
 
-parallel.cpp Execution time: User: 0.07s  System: 0.04s Real: 0.791 
-serial.cpp Execution time:
+parallel.cpp Execution time: Real: 0.791s  User: 0.07s     System: 0.04s  
+serial.cpp Execution time:   Real: 4.109s  User: 0.098s    System: 0.043s
 
 
 Questions: 
 1. In the output of time, what is the difference between real, user, and sys times?
+
 A: The real time represents the total elapsed time from the moment the program starts until it finishes, as measured by a wall clock. The user time is the amount of CPU time the program spent executing its own code in user mode. The system time is the amount of CPU time the OS kernel spent on behalf of the program.
 
 2. Which is longer, user time or sys time? Use your knowledge to explain why.
+
 A: The user time is longer than the sys time. This is because the majority of the instructions do not require kernel level privileges to execute.
 
-3.When fetching all of the locations in the file, which fetcher finishes faster? Why do you
-think that is?
+3. When fetching all of the locations in the file, which fetcher finishes faster? Why do you think that is?
 
 A: The parallel fetcher finishes faster. This is because the child processes that it creates run each task concurrently, whereas the serial fetcher can only perform tasks one at a time.
 
 4. Suppose one of the fetcher children crashes. Will this affect other children? Explain. What is your conclusion regarding the benefits or disadvantages of isolating each fetch task within a different process?
 
-If one fetcher child crashes, it will not affect the other children or the parent process. This is because the child processes are entirely isolated; each one operates in its own separate memory space, which prevents a failure in one from corrupting the state or execution of others. The conclusion is that isolating each fetch task within a different process provides the significant benefit of Fault Tolerance.
+A: If one fetcher child crashes, it will not affect the other children or the parent process. This is because the child processes are entirely isolated; each one operates in its own separate memory space, which prevents a failure in one from corrupting the state or execution of others. The conclusion is that isolating each fetch task within a different process provides the significant benefit of Fault Tolerance.
 
 
 
