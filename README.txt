@@ -5,7 +5,7 @@ README: CPSC-351 Assignment 1 - Process Management
 Team members:
 1. 
 2.
-3. Omar Rafiq, email: omarrafiqq@csu.fullerton.edu, Contribution: parallel.cpp
+3. Omar Rafiq, email: omarrafiq@csu.fullerton.edu, Contribution: parallel.cpp
 
 We confirm everyone is familiar with all functionality in the assignment.
 
