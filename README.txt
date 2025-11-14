@@ -38,7 +38,7 @@ Questions:
 A: The real time represents the total elapsed time from the moment the program starts until it finishes, as measured by a wall clock. The user time is the amount of CPU time the program spent executing its own code in user mode. The system time is the amount of CPU time the OS kernel spent on behalf of the program.
 
 2. Which is longer, user time or sys time? Use your knowledge to explain why.
-A: TODO
+A: The user time is longer than the sys time. This is because the majority of the instructions do not require kernel level privileges to execute.
 
 3.When fetching all of the locations in the file, which fetcher finishes faster? Why do you
 think that is?
